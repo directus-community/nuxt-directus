@@ -28,6 +28,12 @@ export interface DirectusAuthCredentials {
   otp?: string;
 }
 
+export interface DirectusAuthLdapCredentials {
+  identifier: string;
+  password: string;
+  otp?: string;
+}
+
 export interface DirectusAuthResponse {
   user: DirectusUser;
   access_token: string;
